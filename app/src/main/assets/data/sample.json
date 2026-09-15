@@ -1,0 +1,15 @@
+{
+  "appName": "Web App Converter",
+  "version": "1.0.0",
+  "framework": "Native Android + WebViewAssetLoader",
+  "features": [
+    "100% Offline Asset Loading",
+    "Camera & File Upload Support",
+    "HTML5 Geolocation Integration",
+    "Local Storage & DOM Cache",
+    "AdMob Banner & Interstitial Ready",
+    "Chrome-style Thin Progress Bar",
+    "Pull-to-Refresh Gesture"
+  ],
+  "status": "Ready for Production"
+}

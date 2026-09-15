@@ -1,0 +1,6 @@
+{
+  "name": "Web App Converter",
+  "description": "A reusable HTML, CSS, and JavaScript to Android application converter template with local asset loader, AdMob integration, camera and file upload support.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

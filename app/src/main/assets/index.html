@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>Web App Converter</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <!-- App Header -->
+  <header>
+    <div class="brand">
+      <img src="images/logo.svg" alt="App Logo">
+      <h1>Web App</h1>
+    </div>
+    <div id="statusBadge" class="badge">
+      <span class="badge-dot"></span>
+      <span id="statusText">Online</span>
+    </div>
+  </header>
+
+  <!-- Hardware & Permissions Card -->
+  <section class="card">
+    <div class="card-title">
+      <img src="images/icon-rocket.svg" alt="Features">
+      <span>Device & Hardware Features</span>
+    </div>
+    <div class="btn-grid">
+      <button id="btnCamera" class="btn">
+        📷 Camera
+      </button>
+      <button id="btnFile" class="btn btn-secondary">
+        📁 File Chooser
+      </button>
+      <button id="btnLocation" class="btn btn-emerald">
+        📍 GPS Location
+      </button>
+      <button id="btnSound" class="btn btn-secondary">
+        🔊 Audio Tone
+      </button>
+    </div>
+
+    <!-- Hidden native file inputs -->
+    <input type="file" id="cameraInput" class="hidden-input" accept="image/*" capture="environment">
+    <input type="file" id="fileInput" class="hidden-input" multiple>
+
+    <div class="preview-container">
+      <img id="previewImage" class="preview-image" alt="Camera preview">
+      <div id="fileInfo" class="info-box" style="display: none;"></div>
+      <div id="locationInfo" class="info-box" style="display: none;"></div>
+    </div>
+  </section>
+
+  <!-- Native JavaScript Dialogs Card -->
+  <section class="card">
+    <div class="card-title">
+      <span>💬 Native WebChromeClient Dialogs</span>
+    </div>
+    <div class="btn-grid">
+      <button id="btnAlert" class="btn btn-secondary">Alert</button>
+      <button id="btnConfirm" class="btn btn-secondary">Confirm</button>
+      <button id="btnPrompt" class="btn btn-secondary">Prompt</button>
+      <button id="btnFetchJson" class="btn">Fetch JSON</button>
+    </div>
+    <div id="dialogResult" class="info-box" style="display: none;"></div>
+    <pre id="jsonOutput" class="info-box" style="display: none;"></pre>
+  </section>
+
+  <!-- Local Storage State Card -->
+  <section class="card">
+    <div class="card-title">
+      <span>💾 DOM Storage (localStorage)</span>
+    </div>
+    <p style="color: #94A3B8; font-size: 0.85rem;">
+      Counter state is stored in localStorage and preserved across application reloads.
+    </p>
+    <div class="counter-row">
+      <button id="btnMinus" class="btn btn-secondary" style="width: 50px; font-size: 1.25rem;">−</button>
+      <span id="counterValue" class="counter-value">0</span>
+      <button id="btnPlus" class="btn" style="width: 50px; font-size: 1.25rem;">+</button>
+    </div>
+  </section>
+
+  <!-- Multi-page & Subfolder Navigation -->
+  <section class="card">
+    <div class="card-title">
+      <span>📂 Subfolder Routing Demo</span>
+    </div>
+    <div class="nav-links">
+      <a href="pages/about.html" class="nav-item">
+        <span>About & Architecture Guide</span>
+        <span>→</span>
+      </a>
+    </div>
+  </section>
+
+  <footer>
+    <p>Powered by WebViewAssetLoader & Android Kotlin Template</p>
+  </footer>
+
+  <script src="js/app.js"></script>
+</body>
+</html>
